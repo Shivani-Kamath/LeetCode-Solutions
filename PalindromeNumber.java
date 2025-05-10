@@ -1,6 +1,7 @@
-bool isPalindrome(int x) {
-    unsigned int rem,pal=0,new;
-    new=x;
+class Solution {
+    public boolean isPalindrome(int x) {
+    int rem,pal=0,n;
+    n=x;
     if(x==0){
         return true;
     }
@@ -13,10 +14,10 @@ bool isPalindrome(int x) {
     pal= pal*10 + rem;
     }
 
-    if(pal==new){
+    if(pal==n){
         return true;
     }
     return false;
-   
-    
+        
+    }
 }
