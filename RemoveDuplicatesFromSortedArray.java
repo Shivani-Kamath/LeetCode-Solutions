@@ -7,6 +7,7 @@ class Solution {
         nums[right]=nums[left];
         }
     }
+    
     return right+1;
     }
 }
