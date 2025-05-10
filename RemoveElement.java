@@ -1,7 +1,8 @@
-int removeElement(int* nums, int numsSize, int val) {
+class Solution {
+    public int removeElement(int[] nums, int val) {
     int left,right=0;
 
-    for(int left=0;left<numsSize;left++){
+    for(left=0;left<nums.length;left++){
         if(nums[left]!=val){
             nums[right]=nums[left];
             right++;
@@ -9,6 +10,5 @@ int removeElement(int* nums, int numsSize, int val) {
     }
 
     return right;
-
-
+    }
 }
